@@ -1,0 +1,142 @@
+* {
+  font-family: "Dosis", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("https://cdn.pixabay.com/photo/2016/06/02/02/33/triangles-1430105_960_720.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: rgba(251, 253, 253, 0.6);
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.title {
+  font-family: "Hachi Maru Pop", cursive;
+  font-size: 2.5rem;
+  color: #a20b6d;
+}
+
+.text {
+  font-size: 1.5rem;
+  padding: 1rem 1.5rem;
+}
+
+.gameboard {
+  height: 100vh;
+  width: 100vw;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 auto;
+  max-height: 55vh;
+  max-width: 60vh;
+  box-shadow: 2px 2px 3px 4px rgb(133, 132, 132);
+}
+
+.color {
+  width: 50%;
+  height: 50%;
+  display: inline-block;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: left;
+}
+
+.lightBlue {
+  background: #22a6b3;
+  border-top-left-radius: 120%;
+}
+
+.lightBlue.light {
+  background: #7ed6df;
+  border-top-left-radius: 120%;
+}
+
+.violet {
+  background: #be2edd;
+  border-top-right-radius: 120%;
+}
+
+.violet.light {
+  background: #e056fd;
+  border-top-right-radius: 120%;
+}
+
+.orange {
+  background: #f0932b;
+  border-bottom-left-radius: 120%;
+}
+
+.orange.light {
+  background: #ffbe76;
+  border-bottom-left-radius: 120%;
+}
+
+.green {
+  background: #6ab04c;
+  border-bottom-right-radius: 120%;
+}
+
+.green.light {
+  background: #badc58;
+  border-bottom-right-radius: 120%;
+}
+
+.btn-start {
+  width: 100vw;
+  height: 100px;
+  background: #fbfdfd;
+  color: #a20b6d;
+  font-size: 2.5rem;
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 50vw);
+}
+
+.hide {
+  display: none;
+}
+
+@media (min-width: 540px) {
+  .btn-start {
+    left: calc(50% - 200px);
+    width: 400px;
+  }
+}
+
+@media (min-width: 900px) {
+  .container {
+    height: 95vh;
+    width: 95vw;
+  }
+  .btn-start {
+    cursor: pointer;
+  }
+
+  .btn-start:hover {
+    background: #a20b6d;
+    color: #ecf0f1;
+    border: 2px solid #ecf0f1;
+  }
+}

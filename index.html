@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Says - Game by Cyn Romero @ce_y_ene</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Memory test</h1>
+        <p class="text">Exercise your memory with this simple game. Put your attention to the order in which each color lights up and click on it.</p>
+        <div class="gameboard">
+            <div id="lightBlue" class="color lightBlue left" data-color="lightBlue"></div>
+            <div id="violet" class="color violet right" data-color="violet"></div>
+            <div id="orange" class="color orange left" data-color="orange"></div>
+            <div id="green" class="color green right" data-color="green"></div>
+            <button id="startBtn" class="btn-start" onclick="startGame()">Let's start!</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
